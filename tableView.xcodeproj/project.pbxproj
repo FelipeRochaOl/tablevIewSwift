@@ -13,6 +13,9 @@
 		6B1CF3C226C117D70069AA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1CF3C026C117D70069AA03 /* Main.storyboard */; };
 		6B1CF3C426C117DB0069AA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1CF3C326C117DB0069AA03 /* Assets.xcassets */; };
 		6B1CF3C726C117DB0069AA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1CF3C526C117DB0069AA03 /* LaunchScreen.storyboard */; };
+		6B1CF3D226C118130069AA03 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF3D126C118130069AA03 /* Car.swift */; };
+		6B1CF3D426C118320069AA03 /* Motocycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF3D326C118320069AA03 /* Motocycle.swift */; };
+		6B1CF3D626C1185C0069AA03 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF3D526C1185B0069AA03 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		6B1CF3C326C117DB0069AA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1CF3C626C117DB0069AA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B1CF3C826C117DB0069AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1CF3D126C118130069AA03 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		6B1CF3D326C118320069AA03 /* Motocycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motocycle.swift; sourceTree = "<group>"; };
+		6B1CF3D526C1185B0069AA03 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		6B1CF3B926C117D70069AA03 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
+				6B1CF3D026C118000069AA03 /* Models */,
+				6B1CF3CF26C117F30069AA03 /* ViewController */,
+				6B1CF3CE26C117E20069AA03 /* Storyboard */,
 				6B1CF3BA26C117D70069AA03 /* AppDelegate.swift */,
 				6B1CF3BC26C117D70069AA03 /* SceneDelegate.swift */,
-				6B1CF3BE26C117D70069AA03 /* ViewController.swift */,
-				6B1CF3C026C117D70069AA03 /* Main.storyboard */,
 				6B1CF3C326C117DB0069AA03 /* Assets.xcassets */,
 				6B1CF3C526C117DB0069AA03 /* LaunchScreen.storyboard */,
 				6B1CF3C826C117DB0069AA03 /* Info.plist */,
 			);
 			path = tableView;
+			sourceTree = "<group>";
+		};
+		6B1CF3CE26C117E20069AA03 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6B1CF3C026C117D70069AA03 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		6B1CF3CF26C117F30069AA03 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B1CF3BE26C117D70069AA03 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6B1CF3D026C118000069AA03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B1CF3D126C118130069AA03 /* Car.swift */,
+				6B1CF3D326C118320069AA03 /* Motocycle.swift */,
+				6B1CF3D526C1185B0069AA03 /* Vehicle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1CF3D626C1185C0069AA03 /* Vehicle.swift in Sources */,
+				6B1CF3D426C118320069AA03 /* Motocycle.swift in Sources */,
 				6B1CF3BF26C117D70069AA03 /* ViewController.swift in Sources */,
+				6B1CF3D226C118130069AA03 /* Car.swift in Sources */,
 				6B1CF3BB26C117D70069AA03 /* AppDelegate.swift in Sources */,
 				6B1CF3BD26C117D70069AA03 /* SceneDelegate.swift in Sources */,
 			);
